@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arun Bhatnagar - Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="portfolio.js" defer></script>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #f4f4f4; /* Light text color for contrast */
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #121212; /* Dark background color */
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+
+        /* Particles Background */
+        #particles-js {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Place behind other content */
+        }
+
+        /* Header */
+        header {
+            /* Darker header background */
+            color: #ffffff; /* Light green text color for header */
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header h2 {
+            margin: 0;
+            font-weight: 300;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #00FFFF; /* Electric Blue for navigation links */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #39FF14; /* Neon Green on hover */
+        }
+
+        /* Sections */
+        .section {
+            padding: 60px 0;
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .section h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .project-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .project-card {
+            background: #333;
+            border-radius: 8px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .project-card a {
+            color: #00FFFF;
+            text-decoration: none;
+        }
+
+        .project-card a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        footer {
+            background: #1c1c1c;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .project-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <header>
+        <div class="container" style="display: flex; align-items: center; justify-content: center;">
+            <!-- Thapar Logo -->
+            <img src="thapar logo.jpeg" alt="Thapar Institute Logo" style="height: 60px; margin-right: 20px;">
+
+            <!-- Name and Details -->
+            <div style="text-align: center;">
+                <h1>ARUN BHATNAGAR</h1>
+                <br>
+                <h2><b>Thapar Institute of Engineering and Technology, Patiala | Indian Institute of Technology, Madras</b></h2>
+                <h3>Software Engineering | Machine Learning | Data Science | Algorithmic Trading | Finance | Trading and Investing</h3>
+            </div>
+
+            <!-- IIT Madras Logo -->
+            <img src="iitmlogo.png" alt="IIT Madras Logo" style="height: 60px; margin-left: 20px;">
+        </div>
+    </header>
+
+    <!-- Home Section -->
+
+    <!-- About Section -->
+    <!-- About Section -->
+<section id="about" class="section about">
+    <div class="container">
+        <h2 style="color: #35ef28">About Me</h2>
+        <h3 style="color: #fcfefd;">
+            Hello! I'm Arun Bhatnagar, a driven and passionate student currently pursuing a B.E. in Electrical and Computer Engineering at Thapar Institute of Engineering and Technology, alongside a B.S. in Data Science and Application from IIT Madras. My academic journey reflects my dedication to bridging the gap between engineering and data science, with a focus on solving real-world problems using cutting-edge technologies.
+        </h3>
+        <h3 style="color: #f9fafa;">
+            I am always eager to learn and take on new challenges that allow me to grow both personally and professionally. Whether it's developing complex algorithms or analyzing financial data, I am passionate about using technology to make a tangible impact.
+        </h3>
+    </div>
+</section>
+
+<!-- Work Experience Section -->
+<section id="experience" class="section experience">
+    <div class="container">
+        <h2 style="color: #35ef28">Work Experience</h2>
+        <h3 style="color: #00FFFF;">
+            <b>Research Intern at Electric Vehicle Lab, TIET Patiala</b></h3>
+            <div style="text-align: center;">
+                <b><p>During my research intern, we had the opportunity to implement machine learning concepts in the electrical engineering domain.</p>
+                <p>We predicted the motor and battery capacity of an electric cycle that could be used inside and around Thapar and similar campuses.</p>
+                <p>By using clustering concepts on multiple drive cycles, we came to the final result of our project.</p></b>
+            </div>
+            
+            <h3 style="color: #00FFFF;">
+           <b> Data Science Intern, Xyma Analytics</b></h3>
+           <div style="text-align: center;">
+            <b><p>During my internship as a data scientist at Xyma Analytics I had the opportunity to deal with electronic sensors and their behaviour</p>
+            <p>Plotting technical graphs like DFT, IDFT plots helped us to understand the functionalities and errors in the sensor.</p>
+            <p>Applied signal processing fundamentals in python to obtain better calculative results</p></b>
+        </div>
+        
+    </div>
+</section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 style="color:#35ef28">Machine Learning and Data Science Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3 style="color:#35ef28">Failure Classifier for Maintenance</h3>
+                    <p>Predictive maintenance of industrial operations and manufacturing using data-driven techniques.</p>
+                    <a href="https://github.com/abhatnagar21/Failure-Classifier-to-Maintenance" target="_blank">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3 style="color:#35ef28">Sentiment Analysis using C++ and Data Structures</h3>
+                    <p>Sentiment analysis tool written in C++ that classifies text as positive, negative, or neutral.</p>
+                    <a href="https://github.com/abhatnagar21/Sentiment-Analysis-using-C-" target="_blank">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3 style="color:#35ef28">CAPTCHA to Text Converter</h3>
+                    <p>Developed a CAPTCHA decoding system using CNN in Python.</p>
+                    <a href="https://github.com/abhatnagar21/Captcha_To_Text" target="_blank">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3 style="color:#35ef28">News article Sentiment Analysis</h3>
+                    <p>This project involves scraping news articles from a specified website (NDTV in this case), performing sentiment analysis on the content of those articles using the VADER sentiment analysis tool, and then calculating and visualizing the accuracy of the sentiment predictions.</p>
+                    <a href="https://github.com/abhatnagar21/News-article-sentiment-analysis" target="_blank">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3 style="color:#35ef28">Quantile Regression for Time Series Probabilistic Forecasting</h3>
+                    <p>Quantile regression estimates the relationship between the independent variables and specific percentiles (quantiles) of the dependent variable. For example, instead of predicting the average (50th percentile) outcome, quantile regression might predict the 25th percentile (lower quantile) or the 75th percentile (upper quantile)..</p>
+                    <a href="https://github.com/abhatnagar21/Quantile-Regression-for-Time-Series-Probabilistic-Forecasting" target="_blank">View Project</a>
+                </div>
+                <section id="projects" class="section projects">
+                    <div class="container">
+                        <h2 style="color:#35ef28">Quant and Finance Projects</h2>
+                        <div class="project-grid">                
+                <div class="project-card">
+                    <h3 style="color:#35ef28">Enhanced Stock Candlestick Visualization</h3>
+                    <p>Visualization of stock data with technical indicators using Python.</p>
+                    <a href="https://github.com/abhatnagar21/abhatnagar21-Enhanced-Stock-Candlestick-Visualization" target="_blank">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3 style="color:#35ef28">Financial Statement Scraper and Analyzer</h3>
+                    <p>Extract and analyze financial data from companies using Python.</p>
+                    <a href="https://github.com/abhatnagar21/Financial_Statement_Scraper_and_Analyzer" target="_blank">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3 style="color:#35ef28">Portfolio Performance Analysis</h3>
+                    <p>Analyze the performance of a technology stock portfolio using Python.</p>
+                    <a href="https://github.com/abhatnagar21/Portfolio_analysis/tree/main" target="_blank">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3 style="color:#35ef28">RiskPro: Mutual Fund Advisor</h3>
+                    <p>An interface which tells you Whether the mutual fund you choose is it risky or not.</p>
+                    <a href="https://github.com/abhatnagar21/RiskPro-Mutual-Fund-Analysis-Tool" target="_blank">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3 style="color:#35ef28">Comprehensive Stock Analysis and Trading Strategy</h3>
+                    <p>This project involves performing a detailed technical analysis of Apple Inc. (AAPL) stock using various technical indicators and implementing a trading strategy.</p>
+                    <a href="https://github.com/abhatnagar21/Technical-Analysis" target="_blank">View Project</a>
+                </div>
+                
+               
+                <!-- Additional Projects -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 style="color:#35ef28">Skills</h2>
+            <ul>
+                <li><h2>C++</h2></li>
+                <li><h2>Data Structures</h2></li>
+                <li><h2>Python</h2></li>
+                <li><h2>HTML/CSS</h2></li>
+                <li><h2>JavaScript</h2></li>
+                <li><h2>Artificial Intelligence</h2></li>
+                <li><h2>Machine Learning</h2></li>
+                <li><h2>Data Science</h2></li>
+                <li><h2>Probability and Statistics</h2></li>
+                <li><h2>MySQL</h2></li>
+                <li><h2>Algorithmic Trading</h2></li>
+                <li><h2>Fundamental Analysis</h2></li>
+                <li><h2>Technical Analysis</h2></li>
+                <li><h2>Trading and Investment</h2></li>
+            </ul>
+            
+        </div>
+    </section>
+
+    <!-- Position of Responsibilities and Achievements Section -->
+    <section id="responsibilities" class="section responsibilities">
+        <div class="container">
+            <h2 style="color:#35ef28">Certifications and Achievements</h2>
+            <ul>
+                <li><b><h3>350+ questions on Leetcode</h3></b></li>
+                <li><b><h3>January Leetcode Badge 2024</h3> </b></li>
+                <li><b><h3>100 Day Leetcode Badge 2023</h3> </b></li>
+                <li><b><h3>October Leetcode Badge 2023</h3> </b></li>
+                <br>
+                
+                <li><h3>Data Structures and Algorithms--Udemy</h3></li>
+                <li><h3>Machine Learning in Python and R--Udemy</h3></li>
+                <li><h3>Competitive Programming in C++--Udemy</h3></li>
+                <li><h3>Algorithmic Trading--Udemy</h3></li>
+                <li><h3>NLP using BERT--Udemy</h3></li>
+                <li><h3>Complete Financial Analyst Course--Udemy</h3></li>
+                <li><h3>Investing in Stock Market and Trading--Udemy</h3></li>
+                <li><h3>Logistic Regression Practical Use Case--Udemy</h3></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+
+            <!-- Contact Me Section -->
+            <section id="contact" class="section contact" style="background-color:#2E3A59; padding: 20px; text-align: center;">
+                <div class="container">
+                    <h2 style="color:#A4EB34;">Contact Me</h2>
+                    <p><b style="color:#FFFFFF;">Email:</b> <a href="mailto:arunbhatnagarofficial@gmail.com" style="color:#4FA3E0;">arunbhatnagarofficial@gmail.com</a></p>
+                    <p><b style="color:#FFFFFF;">LinkedIn:</b> <a href="https://www.linkedin.com/in/arun-bhatnagar-922985242" target="_blank" style="color:#4FA3E0;">linkedin.com/in/arun-bhatnagar-922985242</a></p>
+                    <p><b style="color:#FFFFFF;">GitHub:</b> <a href="https://github.com/abhatnagar21" target="_blank" style="color:#4FA3E0;">github.com/abhatnagar21</a></p>
+                    <p><b style="color:#FFFFFF;">For Quant and Finance Roles checkout:</b> <a href="https://drive.google.com/file/d/1MBX5ioSAKJl8k-5qydskEREzdBxrSbln/view?usp=drive_link" target="_blank" style="color:#4FA3E0;">View My Resume</a></p>
+                    <p><b style="color:#FFFFFF;">For Data Science and Machine Learning Roles checkout:</b> <a href="https://drive.google.com/file/d/12YzGGYFdCSFzNfLP2scaxCAIMxX8BOIM/view?usp=sharing" target="_blank" style="color:#4FA3E0;">View My Resume</a></p>
+                </div>
+            </section>
+            
+            
+  
+
+    <script>
+        particlesJS('particles-js', {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#00cc66"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#00cc66",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "repulse": {
+                        "distance": 100,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+</body>
+</html>
